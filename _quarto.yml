@@ -1,0 +1,41 @@
+project:
+  type: book
+
+book:
+  title: "Confounders"
+  author: "Joaquin Saposnik"
+  date: "`r format(Sys.time(), '%d %B, %Y')`"
+  chapters:
+    - index.qmd
+
+format:
+  html:
+    toc-depth: 6
+    theme:
+      light: flatly
+      dark: darkly
+    smooth-scroll: true
+    code-link: true
+    code-tools:
+      toggle: true
+    code-fold: true
+    highlight-style: printing
+    code-block-bg: true
+  pdf:
+    documentclass: book
+    toc: true
+    toc-depth: 6
+    # classoption: [onecolumn]
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+    hyperrefoptions:
+      - linktoc=all
+    colorlinks: true
+    linkcolor: "blue"
+    biblio-style: apalike
+    keep-tex: true
+
+editor: visual
+
